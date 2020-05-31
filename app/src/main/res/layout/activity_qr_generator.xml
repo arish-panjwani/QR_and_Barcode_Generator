@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".QR_Generator">
+
+    <EditText
+        android:id="@+id/edit_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#00AA5757"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter the Details for which you need to generate QR code and Bar code"
+        android:inputType="text|textMultiLine"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Generate Code" />
+
+    <ImageView
+        android:id="@+id/qr_code"
+        android:layout_width="252dp"
+        android:layout_height="220dp"
+        android:layout_margin="40dp" />
+
+    <ImageView
+        android:id="@+id/bar_code"
+        android:layout_width="246dp"
+        android:layout_height="54dp"
+        android:layout_margin="40dp" />
+
+
+</LinearLayout>
